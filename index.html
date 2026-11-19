@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jabid Hasan Rudro — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Jabid Hasan Rudro, Software Engineering student at Daffodil International University."
+    />
+    <meta property="og:title" content="Jabid Hasan Rudro — Portfolio" />
+    <meta
+      property="og:description"
+      content="Portfolio of Jabid Hasan Rudro, Software Engineering student at Daffodil International University."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Plain CSS -->
+    <link rel="stylesheet" href="/src/style.css" />
+
+    <!-- Apply saved theme immediately -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('jabid-theme');
+          if (saved === 'light' || saved === 'dark') {
+            document.documentElement.setAttribute('data-theme', saved);
+          }
+        } catch (err) {}
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- Top Scroll Progress Bar -->
+    <div id="progressBar" aria-hidden="true"></div>
+
+    <!-- ==================== HEADER ==================== -->
+    <header id="navbar" class="navbar">
+      <div class="container nav-container">
+        <!-- Far Left: Glowing Circular Avatar & Two-Tone Jabid Hasan -->
+        <a href="#home" class="brand-logo">
+          <span class="brand-avatar">
+            <img
+              id="navAvatarPhoto"
+              src="/src/assets/images/jabid_hero_photo.jpg"
+              alt="Jabid Hasan"
+              referrerpolicy="no-referrer"
+            />
+          </span>
+          <span class="brand-text">
+            <span class="brand-first">Jabid</span>
+            <span class="brand-last">Hasan</span>
+          </span>
+        </a>
+
+        <!-- Center: Rounded Capsule Navigation Bar -->
+        <nav class="nav-links" aria-label="Primary Navigation">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#news" class="nav-link">News</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#certificates" class="nav-link">Certificates</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Far Right: Sleek Icon-Only Theme Toggle + Mobile Menu -->
+        <div class="nav-right">
+
+          <button
+            id="themeToggle"
+            class="theme-toggle-icon"
+            type="button"
+            aria-label="Switch between Dark and White mode"
+            title="Switch Theme"
+          >
+            <svg
+              id="themeIconSun"
+              class="theme-svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+            </svg>
+            <svg
+              id="themeIconMoon"
+              class="theme-svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              hidden
+            >
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+          </button>
+
+          <button
+            id="menuToggle"
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileDrawer"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <nav id="mobileDrawer" class="mobile-drawer" aria-label="Mobile Navigation" hidden>
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#news" class="mobile-nav-link">News</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#education" class="mobile-nav-link">Education</a>
+        <a href="#certificates" class="mobile-nav-link">Certificates</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ==================== 1. HOME / HERO SECTION (Matched to Reference Screenshot) ==================== -->
+      <section id="home" class="hero-section">
+        <!-- Right-Side Blended Portrait Background (Desktop) -->
+        <div class="hero-photo-backdrop" aria-hidden="true">
+          <img
+            id="heroBgPhoto"
+            src="/src/assets/images/jabid_hero_photo.jpg"
+            alt=""
+            referrerpolicy="no-referrer"
+          />
+          <div class="hero-photo-scrim"></div>
+        </div>
+
+        <div class="container hero-container">
+          <!-- Mobile Portrait Card (Shown on smaller screens so portrait stays crisp) -->
+          <div class="hero-mobile-photo">
+            <img
+              id="heroMobilePhoto"
+              src="/src/assets/images/jabid_hero_photo.jpg"
+              alt="Jabid Hasan Rudro"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+
+          <div class="hero-content">
+            <h1 class="hero-name">Jabid Hasan Rudro</h1>
+            <p class="hero-subtitle">SOFTWARE ENGINEERING STUDENT</p>
+            <p class="hero-university">Daffodil International University</p>
+            <p class="hero-bio">
+              I am a Software Engineering student with a passion for technology and web development.
+              I enjoy building useful and creative projects, learning new technologies, and
+              improving my programming skills. My goal is to become a skilled software engineer and
+              create solutions that are simple, practical, and user-friendly.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">View My Work →</a>
+              <a href="#contact" class="btn btn-outline">Contact Me</a>
+              <label for="photoUpload" class="btn btn-ghost">Change Photo</label>
+              <input id="photoUpload" type="file" accept="image/*" hidden />
+              <button id="resetPhotoBtn" class="btn btn-ghost" type="button" hidden>
+                Reset Photo
+              </button>
+            </div>
+          </div>
+
+          <!-- Compact Overview Strip (Aligned straight with hero text) -->
+          <div class="hero-stats" aria-label="Quick overview">
+            <div class="stat-box">
+              <strong class="stat-num" data-count="12" data-suffix="+">0+</strong>
+              <span>Projects Built</span>
+            </div>
+            <div class="stat-box">
+              <strong class="stat-num" data-count="10" data-suffix="+">0+</strong>
+              <span>Technologies</span>
+            </div>
+            <div class="stat-box">
+              <strong class="stat-num" data-count="6" data-pad="2">00</strong>
+              <span>Certificates</span>
+            </div>
+            <div class="stat-box">
+              <strong class="stat-num">DIU SWE</strong>
+              <span>Software Eng.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 2. NEWS SECTION ==================== -->
+      <section id="news" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">01 · Latest Updates</span>
+              <h2>News &amp; Milestones</h2>
+              <p class="subtext">Recent academic activities and software development updates</p>
+            </div>
+
+            <div class="filter-group" role="tablist" aria-label="Filter news">
+              <button class="filter-tab active" type="button" data-news-filter="all">All</button>
+              <button class="filter-tab" type="button" data-news-filter="Academic">Academic</button>
+              <button class="filter-tab" type="button" data-news-filter="Engineering">
+                Engineering
+              </button>
+              <button class="filter-tab" type="button" data-news-filter="Milestones">
+                Milestones
+              </button>
+            </div>
+          </div>
+
+          <div id="newsTimeline" class="news-timeline">
+            <!-- Rendered by src/script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 3. PROJECTS SECTION ==================== -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">02 · Portfolio Work</span>
+              <h2>Featured Projects</h2>
+              <p class="subtext">Web applications, software systems, and academic builds</p>
+            </div>
+
+            <div class="filter-group" role="tablist" aria-label="Filter projects">
+              <button class="filter-tab active" type="button" data-project-filter="all">All</button>
+              <button class="filter-tab" type="button" data-project-filter="Full-Stack">
+                Full-Stack
+              </button>
+              <button class="filter-tab" type="button" data-project-filter="Frontend">
+                Frontend
+              </button>
+              <button class="filter-tab" type="button" data-project-filter="Systems">Systems</button>
+            </div>
+          </div>
+
+          <div id="projectsGrid" class="projects-grid">
+            <!-- Rendered by src/script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 4. SKILLS SECTION ==================== -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">03 · Technical Stack</span>
+              <h2>Skills</h2>
+              <p class="subtext">Core programming, CS fundamentals, and web technologies</p>
+            </div>
+          </div>
+
+          <div id="skillsGrid" class="skills-card-grid">
+            <!-- Rendered by src/script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 5. EDUCATION SECTION ==================== -->
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">04 · Academic Journey</span>
+              <h2>Education</h2>
+              <p class="subtext">
+                Academic background from school and college to Software Engineering at Daffodil
+                International University
+              </p>
+            </div>
+          </div>
+
+          <div id="educationList" class="edu-list">
+            <div class="edu-timeline-item" style="--i: 0">
+              <div class="edu-rail" aria-hidden="true">
+                <span class="edu-year">Now</span>
+                <span class="edu-node"></span>
+              </div>
+              <article class="panel-card edu-card">
+                <p class="edu-kicker">CURRENT · STARTED 2025</p>
+                <h3>B.Sc. in Software Engineering</h3>
+                <p class="edu-school">Daffodil International University</p>
+                <div class="edu-tags">
+                  <span class="edu-tag">Department of Software Engineering</span>
+                  <span class="edu-tag">2025 — Present</span>
+                  <span class="edu-tag">Ongoing</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="edu-timeline-item" style="--i: 1">
+              <div class="edu-rail" aria-hidden="true">
+                <span class="edu-year">2022</span>
+                <span class="edu-node"></span>
+              </div>
+              <article class="panel-card edu-card">
+                <p class="edu-kicker">COMPLETED 2022</p>
+                <h3>Higher Secondary Certificate (HSC)</h3>
+                <p class="edu-school">Hazi Jashim Uddin Degree College</p>
+                <div class="edu-tags">
+                  <span class="edu-tag">Science Group</span>
+                  <span class="edu-tag">Year 2022</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="edu-timeline-item" style="--i: 2">
+              <div class="edu-rail" aria-hidden="true">
+                <span class="edu-year">2020</span>
+                <span class="edu-node"></span>
+              </div>
+              <article class="panel-card edu-card">
+                <p class="edu-kicker">COMPLETED 2020</p>
+                <h3>Secondary School Certificate (SSC)</h3>
+                <p class="edu-school">Sreekole Aziza Smriti High School</p>
+                <div class="edu-tags">
+                  <span class="edu-tag">Science Group</span>
+                  <span class="edu-tag">Year 2020</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 6. CERTIFICATES SECTION ==================== -->
+      <section id="certificates" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">05 · Credentials</span>
+              <h2>Certificates</h2>
+              <p class="subtext">Verified coursework, seminars, and technical certifications</p>
+            </div>
+          </div>
+
+          <div id="certificatesList" class="certs-all-grid">
+            <!-- Rendered by src/script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 7. CONTACT SECTION ==================== -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">06 · Get In Touch</span>
+              <h2>Contact Me</h2>
+              <p class="subtext">
+                Feel free to reach out for software projects, collaborations, or internship
+                opportunities
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-layout">
+            <!-- Left Info Card -->
+            <div class="panel-card contact-info">
+              <h3>Jabid Hasan Rudro</h3>
+              <p class="card-desc">
+                Software Engineering Department, Daffodil International University (DIU), Daffodil
+                Smart City, Dhaka.
+              </p>
+
+              <div class="info-list">
+                <div class="info-item">
+                  <span class="info-label">Email</span>
+                  <div class="info-value-row">
+                    <a href="mailto:jabidrudro@gmail.com" class="accent-link">
+                      jabidrudro@gmail.com
+                    </a>
+                    <button id="copyEmailBtn" class="copy-btn" type="button">Copy</button>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <span class="info-label">Department</span>
+                  <span>Department of Software Engineering (SWE)</span>
+                </div>
+
+                <div class="info-item">
+                  <span class="info-label">University</span>
+                  <span>Daffodil International University (DIU)</span>
+                </div>
+
+                <div class="info-item">
+                  <span class="info-label">Location</span>
+                  <span>Dhaka, Bangladesh</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Contact Form -->
+            <form id="contactForm" class="panel-card contact-form" novalidate>
+              <div class="form-group">
+                <label for="nameInput">Your Name</label>
+                <input id="nameInput" type="text" placeholder="Enter your name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="emailInput">Email Address</label>
+                <input id="emailInput" type="email" placeholder="you@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subjectInput">Subject</label>
+                <input id="subjectInput" type="text" placeholder="Project or inquiry" required />
+              </div>
+
+              <div class="form-group">
+                <label for="messageInput">Message</label>
+                <textarea
+                  id="messageInput"
+                  rows="3"
+                  placeholder="Write your message..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+              <p id="formMessage" class="form-message" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>
+          &copy; <span id="yearNow">2026</span> Jabid Hasan Rudro · Software Engineering, Daffodil
+          International University
+        </p>
+        <a href="#home" class="accent-link">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <!-- Floating Back To Top Button -->
+    <button id="topBtn" class="top-btn" type="button" aria-label="Scroll to top" hidden>↑</button>
+
+    <!-- Detail Modal -->
+    <div
+      id="detailModal"
+      class="modal-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+      hidden
+    >
+      <div class="modal-card">
+        <div class="modal-head">
+          <div>
+            <p id="modalMeta" class="meta-text"></p>
+            <h3 id="modalTitle"></h3>
+          </div>
+          <button id="modalClose" class="modal-close" type="button" aria-label="Close">✕</button>
+        </div>
+        <div id="modalBody" class="modal-body"></div>
+      </div>
+    </div>
+
+    <!-- Plain Vanilla JavaScript -->
+    <script type="module" src="/src/script.js"></script>
+  </body>
+</html>
